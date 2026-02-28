@@ -73,7 +73,7 @@ const initDataJson = [
       {
         "name": "土耳其标签合规-制造商名称，地址",
         "type": "text",
-        "content": "Üretici: Üretici Adres："
+        "content": "Üretici: \nÜretici Adres："
       },
       {
         "name": "土耳其标签合规-产品可追踪元素",
@@ -102,7 +102,7 @@ const initDataJson = [
         "name": "土耳其标签合规-土耳其负责人",
         "type": "image_text",
         "img": "https://commimg.kwcdn.com/oms-public-file/2013f771338/7e2c5fec-5fe2-4534-a448-d3901d44acea_522x248.jpeg",
-        "content": "Ad： Adres："
+        "content": "Ad： \nAdres：\nEmail："
       },
       {
         "name": "塑料袋防窒息警示语",
