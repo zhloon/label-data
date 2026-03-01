@@ -15,10 +15,22 @@ const initDataJson = [
         "content": "Name：\nAddress：\nEmail："
       },
       {
-        "name": "欧代",
+        "name": "欧代标签",
         "type": "image_text",
         "img": "https://commimg.kwcdn.com/oms-public-file/1f193481a40/0ff76970-0f43-4d7f-a053-04e910060f0d_374x140.png",
         "content": "Name：\nAddress：\nEmail："
+      },
+      {
+        "name": "土耳其标签合规-土耳其负责人",
+        "type": "image_text",
+        "img": "https://commimg.kwcdn.com/oms-public-file/2013f771338/7e2c5fec-5fe2-4534-a448-d3901d44acea_522x248.jpeg",
+        "content": "Ad： \nAdres：\nEmail："
+      },
+      {
+        "name": "UKCA标志",
+        "type": "image",
+        "img": "https://commimg.kwcdn.com/oms-public-file/1f193486f20/8625a190-710e-4ead-ac0a-e414aca3b34d_139x70.png",
+        "content": ""
       },
       {
         "name": "CE标签",
@@ -27,28 +39,35 @@ const initDataJson = [
         "content": ""
       },
       {
-        "name": "生产批号/型号/序列号",
-        "sub": "需与申报信息一致",
-        "type": "text",
-        "content": "Batch Number："
+        "name": "废弃电子电器回收标识",
+        "type": "image",
+        "img": "https://commimg.kwcdn.com/oms-public-file/1f193486f20/9c81a1f3-7ac8-4dd3-8775-2de136c42a1c_278x140.png",
+        "content": ""
       },
       {
-        "name": "尺寸比例合规CE",
+        "name": "食品接触标签",
         "type": "image",
-        "img": "https://commimg.kwcdn.com/oms-public-file/20ef5f1248/ceb091dd-9b33-4dcf-8461-09ff05373eb7_189x130.jpeg",
+        "img": "https://commimg.kwcdn.com/oms-public-file/1f193481a40/c2d44568-a185-42cd-a11c-b1b8c579388e_278x140.png",
         "content": ""
+      },
+      {
+        "name": "Triman标签-包装法",
+        "type": "image",
+        "img": "https://commimg.kwcdn.com/oms-public-file/1fad183ef8/2a156957-97b2-4666-9ffc-12af39fec57a_570x140.png",
+        "content": ""
+      },
+      {
+        "name": "塑料袋防窒息警示语",
+        "type": "image_text",
+        "img": "https://commimg.kwcdn.com/oms-public-file/201365d7812/3fc13bd5-50cc-463c-b956-13c5a590eecc_400x338.png",
+        "content": "WARNING：To avoid danger of suffocation, keep this bag away from babies and children. Do not use this bag in cribs, beds, carriages, or playpens. This bag is not a toy."
       },
       {
         "name": "CE类：欧盟进口商信息（包装）",
         "type": "text",
         "content": "For EU\nEU Importer Name: Whaleco Technology Limited\nEU Importer Address: First Floor, 25 St Stephens Green, Dublin 2, Ireland"
       },
-      {
-        "name": "废弃电子电器回收标识",
-        "type": "image",
-        "img": "https://commimg.kwcdn.com/oms-public-file/1f193486f20/9c81a1f3-7ac8-4dd3-8775-2de136c42a1c_278x140.png",
-        "content": ""
-      },
+      
       {
         "name": "英国进口商信息（包装）",
         "type": "text",
@@ -64,6 +83,13 @@ const initDataJson = [
         "type": "text",
         "content": "For UK\nUK Importer Name: Whaleco UK Limited\nUK Importer Address: 5 Churchill Place, 10th Floor, London, United Kingdom, E14 5HU"
       },
+      {
+        "name": "生产批号/型号/序列号",
+        "sub": "需与申报信息一致",
+        "type": "text",
+        "content": "Batch Number："
+      },
+      
       {
         "name": "美国含有纽扣电池产品的警告标签",
         "type": "image",
@@ -85,30 +111,6 @@ const initDataJson = [
         "name": "FCC 符合性声明",
         "type": "text",
         "content": "This device complies with part 15 of the FCC Rules. Operation is subject to the following two conditions: (1) This device may not cause harmful interference, and (2) this device must accept any interference received, including interference that may cause undesired operation."
-      },
-      {
-        "name": "UKCA标志",
-        "type": "image",
-        "img": "https://commimg.kwcdn.com/oms-public-file/1f193486f20/8625a190-710e-4ead-ac0a-e414aca3b34d_139x70.png",
-        "content": ""
-      },
-      {
-        "name": "Triman标签-包装法",
-        "type": "image",
-        "img": "https://commimg.kwcdn.com/oms-public-file/1fad183ef8/2a156957-97b2-4666-9ffc-12af39fec57a_570x140.png",
-        "content": ""
-      },
-      {
-        "name": "土耳其标签合规-土耳其负责人",
-        "type": "image_text",
-        "img": "https://commimg.kwcdn.com/oms-public-file/2013f771338/7e2c5fec-5fe2-4534-a448-d3901d44acea_522x248.jpeg",
-        "content": "Ad： \nAdres：\nEmail："
-      },
-      {
-        "name": "塑料袋防窒息警示语",
-        "type": "image_text",
-        "img": "https://commimg.kwcdn.com/oms-public-file/201365d7812/3fc13bd5-50cc-463c-b956-13c5a590eecc_400x338.png",
-        "content": "WARNING：To avoid danger of suffocation, keep this bag away from babies and children. Do not use this bag in cribs, beds, carriages, or playpens. This bag is not a toy."
       }
     ]
   },
