@@ -2,12 +2,12 @@ const initDataJson = [
     {
         "groupTitle": "通用",
         "items": [
-            { "type": "image_text", "name": "欧盟代表（名字、地址、电话）", "img": "https://recruit-student.51miniapps.com/tool/icon/221-ecrep.png", "content": "Name: \nAddress: \nEmail: " },
-            { "type": "image_text", "name": "美国代表（名字、地址、电话）", "img": "https://recruit-student.51miniapps.com/tool/icon/us-rep.png", "content": "Name: \nAddress: \nEmail: " },
-            { "type": "image_text", "name": "欧盟代表（名字、地址、电话）", "img": "https://recruit-student.51miniapps.com/tool/icon/eu-rep.png", "content": "Name: \nAddress: \nEmail: " },
-            { "type": "image_text", "name": "土耳其代表（名字、地址、电话）", "img": "https://recruit-student.51miniapps.com/tool/icon/1/tur-rep.png", "content": "Ad: \nAdres: \nEmail: " },
-            { "type": "image_text", "name": "英国代表（名字、地址、电话）", "img": "https://recruit-student.51miniapps.com/tool/icon/221-ukrep.png", "content": "Name: \nAddress: \nEmail: " },
-            { "type": "image_text", "name": "土耳其代表（名字、地址、电话）", "img": "https://recruit-student.51miniapps.com/tool/icon/1/tr-rep.png", "content": "Ad: \nAdres: \nEmail: " },
+            { "type": "image_text", "name": "欧盟代表（名字、地址、邮箱）", "img": "https://recruit-student.51miniapps.com/tool/icon/221-ecrep.png", "content": "Name: \nAddress: \nEmail: " },
+            { "type": "image_text", "name": "美国代表（名字、地址、邮箱）", "img": "https://recruit-student.51miniapps.com/tool/icon/us-rep.png", "content": "Name: \nAddress: \nEmail: " },
+            { "type": "image_text", "name": "欧盟代表（名字、地址、邮箱）", "img": "https://recruit-student.51miniapps.com/tool/icon/eu-rep.png", "content": "Name: \nAddress: \nEmail: " },
+            { "type": "image_text", "name": "土耳其代表（名字、地址、邮箱）", "img": "https://recruit-student.51miniapps.com/tool/icon/1/tur-rep.png", "content": "Ad: \nAdres: \nEmail: " },
+            { "type": "image_text", "name": "英国代表（名字、地址、邮箱）", "img": "https://recruit-student.51miniapps.com/tool/icon/221-ukrep.png", "content": "Name: \nAddress: \nEmail: " },
+            { "type": "image_text", "name": "土耳其代表（名字、地址、邮箱）", "img": "https://recruit-student.51miniapps.com/tool/icon/1/tr-rep.png", "content": "Ad: \nAdres: \nEmail: " },
             { "type": "text", "name": "CE类：欧盟进口商信息（包装）", "content": "For EU\nEU Importer Name: Whaleco Technology Limited\nEU Importer Address: First Floor, 25 St Stephens Green, Dublin 2, Ireland" },
             { "type": "text", "name": "英国进口商信息（包装）", "content": "For UK\nUK Importer Name: Whaleco UK Limited\nUK Importer Address: 5 Churchill Place, 10th Floor, London, United Kingdom, E14 5HU" },
             { "type": "text", "name": "CE类：欧盟进口商信息（本体）", "content": "For EU\nEU Importer Name: Whaleco Technology Limited\nEU Importer Address: First Floor, 25 St Stephens Green, Dublin 2, Ireland" },
