@@ -1,557 +1,169 @@
 const initDataJson = [
   {
-    "groupTitle": "必填元素",
+    "groupTitle": "通用",
     "items": [
-      {
-        "name": "制造商名称与地址",
-        "sub": "需与申报信息一致",
-        "type": "text",
-        "content": "Manufacturer: \nAddress:"
-      },
-      {
-        "name": "英代标签",
-        "type": "image_text",
-        "img": "https://commimg.kwcdn.com/oms-public-file/1f193481a40/6f0c5fea-028e-41d0-b4b6-8339cf99aeab_374x140.png",
-        "content": "Name：\nAddress：\nEmail："
-      },
-      {
-        "name": "欧代标签",
-        "type": "image_text",
-        "img": "https://commimg.kwcdn.com/oms-public-file/1f193481a40/0ff76970-0f43-4d7f-a053-04e910060f0d_374x140.png",
-        "content": "Name：\nAddress：\nEmail："
-      },
-      {
-        "name": "土耳其标签合规-土耳其负责人",
-        "type": "image_text",
-        "img": "https://commimg.kwcdn.com/oms-public-file/2013f771338/7e2c5fec-5fe2-4534-a448-d3901d44acea_522x248.jpeg",
-        "content": "Ad： \nAdres：\nEmail："
-      },
-      {
-        "name": "UKCA标志",
-        "type": "image",
-        "img": "https://commimg.kwcdn.com/oms-public-file/1f193486f20/8625a190-710e-4ead-ac0a-e414aca3b34d_139x70.png",
-        "content": ""
-      },
-      {
-        "name": "CE标签",
-        "type": "image",
-        "img": "https://commimg.kwcdn.com/oms-public-file/21a488cbd6/c1228ede-0eec-40bb-afcf-6d572258f440_1192x840.png",
-        "content": ""
-      },
-      {
-        "name": "废弃电子电器回收标识",
-        "type": "image",
-        "img": "https://commimg.kwcdn.com/oms-public-file/1f193486f20/9c81a1f3-7ac8-4dd3-8775-2de136c42a1c_278x140.png",
-        "content": ""
-      },
-      {
-        "name": "食品接触标签",
-        "type": "image",
-        "img": "https://commimg.kwcdn.com/oms-public-file/1f193481a40/c2d44568-a185-42cd-a11c-b1b8c579388e_278x140.png",
-        "content": ""
-      },
-      {
-        "name": "Triman标签-包装法",
-        "type": "image",
-        "img": "https://commimg.kwcdn.com/oms-public-file/1fad183ef8/2a156957-97b2-4666-9ffc-12af39fec57a_570x140.png",
-        "content": ""
-      },
-      {
-        "name": "塑料袋防窒息警示语",
-        "type": "image_text",
-        "img": "https://commimg.kwcdn.com/oms-public-file/201365d7812/3fc13bd5-50cc-463c-b956-13c5a590eecc_400x338.png",
-        "content": "WARNING：To avoid danger of suffocation, keep this bag away from babies and children. Do not use this bag in cribs, beds, carriages, or playpens. This bag is not a toy."
-      },
-      {
-        "name": "CE类：欧盟进口商信息（包装）",
-        "type": "text",
-        "content": "For EU\nEU Importer Name: Whaleco Technology Limited\nEU Importer Address: First Floor, 25 St Stephens Green, Dublin 2, Ireland"
-      },
-      
-      {
-        "name": "英国进口商信息（包装）",
-        "type": "text",
-        "content": "For UK\nUK Importer Name: Whaleco UK Limited\nUK Importer Address: 5 Churchill Place, 10th Floor, London, United Kingdom, E14 5HU"
-      },
-      {
-        "name": "CE类：欧盟进口商信息（本体）",
-        "type": "text",
-        "content": "For EU\nEU Importer Name: Whaleco Technology Limited\nEU Importer Address: First Floor, 25 St Stephens Green, Dublin 2, Ireland"
-      },
-      {
-        "name": "英国进口商信息（本体）",
-        "type": "text",
-        "content": "For UK\nUK Importer Name: Whaleco UK Limited\nUK Importer Address: 5 Churchill Place, 10th Floor, London, United Kingdom, E14 5HU"
-      },
-      {
-        "name": "生产批号/型号/序列号",
-        "sub": "需与申报信息一致",
-        "type": "text",
-        "content": "Batch Number："
-      },
-      
-      {
-        "name": "美国含有纽扣电池产品的警告标签",
-        "type": "image",
-        "img": "https://commimg.kwcdn.com/oms-public-file/1fad18d808/020ad269-0f3d-4183-bfa9-b1d17f7a834b_578x181.png",
-        "content": ""
-      },
-      {
-        "name": "土耳其标签合规-制造商名称，地址",
-        "type": "text",
-        "content": "Üretici: \nÜretici Adres："
-      },
-      {
-        "name": "土耳其标签合规-产品可追踪元素",
-        "sub": "生产批次号/型号/序列号",
-        "type": "text",
-        "content": "Parti Numarası: Seri numarası:"
-      },
-      {
-        "name": "FCC 符合性声明",
-        "type": "text",
-        "content": "This device complies with part 15 of the FCC Rules. Operation is subject to the following two conditions: (1) This device may not cause harmful interference, and (2) this device must accept any interference received, including interference that may cause undesired operation."
-      }
+      { "name": "欧盟代表（名字、地址、电话）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/221-ecrep.png" },
+      { "name": "美国代表（名字、地址、电话）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/us-rep.png" },
+      { "name": "欧盟代表（名字、地址、电话）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/eu-rep.png" },
+      { "name": "土耳其代表（名字、地址、电话）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/tur-rep.png" },
+      { "name": "英国代表（名字、地址、电话）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/221-ukrep.png" },
+      { "name": "土耳其代表（名字、地址、电话）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/tr-rep.png" },
+      { "name": "欧盟 CE 认证", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/221-ce.png" },
+      { "name": "美国 FCC 认证", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/221-fc.png" },
+      { "name": "英国 UKCA 认证", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/221-ukca.png" },
+      { "name": "欧盟食品接触材料安全认证", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/222-bz.png" },
+      { "name": "环保标志，商品可回收利用", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/221-qiu.png" },
+      { "name": "欧盟不带电池的废弃电子电器回收标志", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/221-lj1.png" },
+      { "name": "欧盟电池回收标志", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/222-lj2.png" },
+      { "name": "欧盟标志", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/221-eu.png" },
+      { "name": "欧洲共同体标志", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/221-ec.png" },
+      { "name": "危险警示标签", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-Warning.png" },
+      { "name": "危险警示标签", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-Warnings.png" },
+      { "name": "填写数字+（以上的人群使用）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-round.png" },
+      { "name": "禁止0-1岁儿童接触", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-01.png" },
+      { "name": "禁止0-3岁儿童接触", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-03.png" },
+      { "name": "禁止0-3岁儿童接触", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_6.png" },
+      { "name": "禁止0-6岁儿童接触", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-06.png" },
+      { "name": "通用可回收标志", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-environmentala.png" },
+      { "name": "聚氯乙烯（PVC）回收标志", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-3pvc.png" },
+      { "name": "低密度聚乙烯（PE-LD）回收标志", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/227-4peld.png" },
+      { "name": "聚丙烯（PP）回收标志", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-5pp.png" },
+      { "name": "聚苯乙烯（PS）回收标志", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-6ps.png" },
+      { "name": "带有盖子且可开启的容器", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-empty.png" },
+      { "name": "建议开封 6 个月内使用完毕", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-6M.png" },
+      { "name": "建议开封 12 个月内使用完毕", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-12M.png" },
+      { "name": "投放回收标志，产品或其包装应回收处理", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-Littering.png" },
+      { "name": "通用可回收标志", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_13.png" },
+      { "name": "日本 PSE 菱形标志", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-PSE.png" },
+      { "name": "中国强制性产品认证（CCC）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-ccc.png" },
+      { "name": "美国儿童产品证书（CPC）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-cpc.png" },
+      { "name": "美国 FDA 认证", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-FDA.png" },
+      { "name": "美国 UL 认证", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-UL.png" },
+      { "name": "美国和加拿大双重标准 UL 认证", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_12.png" },
+      { "name": "美国 ETL 认证", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-ETL.png" },
+      { "name": "海湾 GCC 认证", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-GCC.png" },
+      { "name": "韩国 KC 认证", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_3.png" },
+      { "name": "中国 QS 质量安全认证", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-QS.png" },
+      { "name": "日本 TELEC 认证", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_1.png" },
+      { "name": "日本 MIC 认证", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_2.png" },
+      { "name": "热表面警告", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_4.png" },
+      { "name": "热表面警告", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_7.png" },
+      { "name": "易燃危险物品", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-fireproof.png" },
+      { "name": "让儿童在水环境中受到监督", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_5.png" },
+      { "name": "含有电池产品的警告标志", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_11.png" },
+      { "name": "放在儿童接触不到的地方", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_9.png" },
+      { "name": "直流电源标志", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_8.png" },
+      { "name": "双重绝缘（无需地线）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_10.png" },
+      { "name": "欧盟 RoHS 标志", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_14.png" },
+      { "name": "欧盟 RoHS 标志", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_24.png" },
+      { "name": "欧盟 RoHS 标志", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_33.png" },
+      { "name": "进口商", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_23.png" },
+      { "name": "不适合驾驶和道路使用", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_26.png" },
+      { "name": "不适合驾驶和道路使用", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_25.png" },
+      { "name": "避免窒息危险，请将袋子远离婴儿和儿童", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_32.png" },
+      { "name": "美国 Soy Ink 认证", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_31.png" },
+      { "name": "美国 FCC 符合声明", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/221-content.png" },
+      { "name": "儿童玩具警示语", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/221-warn2.png" },
+      { "name": "窒息危险警示", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_15.png" },
+      { "name": "法国 Triman 标识（纺织品）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/221-bf.png" },
+      { "name": "法国 Triman 标识（包装）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/221-1f.png" },
+      { "name": "法国 Triman 标识（电器）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/221-2f.png" },
+      { "name": "法国 Triman 标识（玩具）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/221-3f.png" },
+      { "name": "纽扣/硬币电池吞食危险警示", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/221-warn1.png" },
+      { "name": "纽扣/硬币电池吞食危险警示", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_16.png" },
+      { "name": "弹性行李带警告标签", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_34.png" },
+      { "name": "窒息危险警示语-3至6岁含小部件", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_36.png" },
+      { "name": "滤光片类别编号为0", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_37.png" },
+      { "name": "滤光片类别编号为1", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_38.png" },
+      { "name": "滤光片类别编号为2", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_39.png" },
+      { "name": "滤光片类别编号为3", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_40.png" },
+      { "name": "滤光片类别编号为4", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_41.png" },
+      { "name": "环保标识", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_42.png" },
+      { "name": "重型包裹标识", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/1/general_43.png" }
     ]
   },
   {
-    "groupTitle": "其他元素",
+    "groupTitle": "法国标",
     "items": [
-      {
-        "name": "化妆品彩盒功效-德语",
-        "type": "text",
-        "content": "funktion:"
-      },
-      {
-        "name": "请勿发射非产品配备的投射物警示语(德语)",
-        "type": "text",
-        "content": "Achtung. Keine anderen Gegenstände mit diesem Spielzeug abschießen als die mitgelieferten Geschosse."
-      },
-      {
-        "name": "弹射玩具警示语(德语)",
-        "type": "text",
-        "content": "Achtung. Nicht auf Augen oder Gesicht zielen."
-      },
-      {
-        "name": "弹射玩具警示语(英语)",
-        "type": "text",
-        "content": "Warning. Do not aim at eyes or face."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-尖锐的尖点（英语）",
-        "type": "text",
-        "content": "Warning. Not suitable for children under 36 months. This toy has sharp functional points."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-尖锐的尖点（德语）",
-        "type": "text",
-        "content": "Achtung. Nicht für Kinder unter 36 Monaten geeignet. Dieses Spielzeug hat funktionsbedingte scharfe Spitzen."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-尖锐的尖点（法语）",
-        "type": "text",
-        "content": "Attention. Ne convient pas aux enfants de moins de 36 mois. Ce jouet présente des pointes acérées fonctionnelles."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-尖锐的尖点（意大利语）",
-        "type": "text",
-        "content": "Avvertenza. Non adatto a bambini di età inferiore a 36 mesi. Questo giocattolo presenta punte funzionali acuminate."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-尖锐的尖点（西班牙语）",
-        "type": "text",
-        "content": "Advertencia. No conviene para niños menores de 36 meses. Este juguete tiene puntas punzantes funcionales."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-尖锐的尖点（荷兰语）",
-        "type": "text",
-        "content": "Waarschuwing. Niet geschikt voor kinderen jonger dan 36 maanden.Dit speelgoed heeft scherpe functionele punten."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-尖锐的尖点（葡萄牙语）",
-        "type": "text",
-        "content": "Atenção. Contra-indicado para crianças com menos de 36 meses.Este brinquedo possui pontas aguçadas funcionais."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-尖锐的尖点（瑞典语）",
-        "type": "text",
-        "content": "Varning. Inte lämplig för barn under 36 månader.Leksaken har vassa funktionella spetsar."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-尖锐的尖点-捷克语",
-        "type": "text",
-        "content": "Upozornění. Nevhodné pro děti mladší 36 měsíců. Tato hračka obsahuje nebezpečně ostré funkční hroty."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-尖锐的尖点-波兰语",
-        "type": "text",
-        "content": "Ostrzeżenie. Nieodpowiednie dla dzieci w wieku poniżej 36 miesięcy.Ta zabawka ma ostre funkcjonalne zakończenia."
-      },
-      {
-        "name": "土耳其玩具-不适合0-3岁警示语-尖锐的尖点",
-        "type": "text",
-        "content": "Uyarı. 36 aydan küçük çocuklar için uygun değildir.Bu oyuncak fonksiyonel sivri uçlar içermektedir."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-锋利的边缘-波兰语",
-        "type": "text",
-        "content": "Ostrzeżenie. Nieodpowiednie dla dzieci w wieku poniżej 36 miesięcy.Ta zabawka ma ostre funkcjonalne krawędzie."
-      },
-      {
-        "name": "土耳其玩具-不适合0-3岁警示语-锋利的边缘",
-        "type": "text",
-        "content": "Uyarı. 36 aydan küçük çocuklar için uygun değildir.Bu oyuncak fonksiyonel keskin kenarlar içermektedir."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-锋利的边缘（匈牙利语）",
-        "type": "text",
-        "content": "Figyelmeztetés. Csak 36 hónaposnál idősebb gyermekek számára alkalmas.Ennek a játéknak éles funkcionális élei vannak."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-尖锐的尖点（匈牙利语）",
-        "type": "text",
-        "content": "Figyelmeztetés. Csak 36 hónaposnál idősebb gyermekek számára alkalmas.Ennek a játéknak éles funkcionális hegyes végződései vannak."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-锋利的边缘（英语）",
-        "type": "text",
-        "content": "Warning. Not suitable for children under 36 months. This toy has sharp functional edges."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-锋利的边缘（德语）",
-        "type": "text",
-        "content": "Achtung. Nicht für Kinder unter 36 Monaten geeignet. Dieses Spielzeug hat funktionsbedingte scharfe Kanten."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-锋利的边缘（法语）",
-        "type": "text",
-        "content": "Attention. Ne convient pas aux enfants de moins de 36 mois. Ce jouet présente des bords coupants fonctionnels."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-锋利的边缘（意大利语）",
-        "type": "text",
-        "content": "Avvertenza. Non adatto a bambini di età inferiore a 36 mesi. Questo giocattolo presenta bordi funzionali taglienti."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-锋利的边缘（西班牙语）",
-        "type": "text",
-        "content": "Advertencia. No conviene para niños menores de 36 meses. Este juguete tiene bordes cortantes funcionales."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-锋利的边缘（葡萄牙语）",
-        "type": "text",
-        "content": "Atenção. Contra-indicado para crianças com menos de 36 meses.Este brinquedo possui bordos cortantes funcionais."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-锋利的边缘（瑞典语）",
-        "type": "text",
-        "content": "Varning. Inte lämplig för barn under 36 månader.Leksaken har vassa funktionella kanter."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-锋利的边缘-捷克语",
-        "type": "text",
-        "content": "Upozornění. Nevhodné pro děti mladší 36 měsíců.Tato hračka obsahuje nebezpečně ostré funkční hrany."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-锋利的边缘（荷兰语）",
-        "type": "text",
-        "content": "Waarschuwing. Niet geschikt voor kinderen jonger dan 36 maanden.Dit speelgoed heeft scherpe functionele randen."
-      },
-      {
-        "name": "英国儿童玩具警示语-香水玩具",
-        "type": "text",
-        "content": "Warning. Contains fragrances that may cause allergies."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-香水玩具（法语）",
-        "type": "text",
-        "content": "Attention. Contient des substances parfumantes susceptibles de causer des allergies."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-香水玩具（意大利语）",
-        "type": "text",
-        "content": "Avvertenza. Contiene fragranze potenzialmente allergizzanti."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-香水玩具（西班牙语）",
-        "type": "text",
-        "content": "Advertencia. Contiene fragancias que pueden causar alergias."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-香水玩具（荷兰语）",
-        "type": "text",
-        "content": "Waarschuwing. Bevat geurstoffen die een allergische reactie kunnen veroorzaken."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-香水玩具（葡萄牙语）",
-        "type": "text",
-        "content": "Atenção. Contém fragrâncias que podem causar alergias."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-香水玩具（瑞典语）",
-        "type": "text",
-        "content": "Varning. Innehåller doftämnen som kan förorsaka allergier."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-香水玩具-捷克语",
-        "type": "text",
-        "content": "Upozornění. Tento výrobek obsahuje vonné látky, které mohou způsobit alergie."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-香水玩具-波兰语",
-        "type": "text",
-        "content": "Ostrzeżenie. Zawiera substancje zapachowe mogące powodować alergie."
-      },
-      {
-        "name": "土耳其玩具-香水玩具",
-        "type": "text",
-        "content": "Uyarı. Allerjiye sebep olabilecek kokular içerir."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-香水玩具（匈牙利语）",
-        "type": "text",
-        "content": "Figyelmeztetés. Olyan illatanyagokat tartalmaz, amelyek allergiát okozhatnak."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-含长绳（英语）",
-        "type": "text",
-        "content": "Warning. Not suitable for children under 36 months. Long cord.Strangulation hazard."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-含长绳（德语）",
-        "type": "text",
-        "content": "Achtung. Nicht für Kinder unter 36 Monaten geeignet. Lange Schnur. Strangulationsgefahr."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-含长绳（法语）",
-        "type": "text",
-        "content": "Attention. Ne convient pas aux enfants de moins de 36 mois. Longue corde. Danger de strangulation."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-含长绳（意大利语）",
-        "type": "text",
-        "content": "Avvertenza. Non adatto a bambini di età inferiore a 36 mesi. Corde lunghe. Rischio di strangolamento."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-含长绳（西班牙语）",
-        "type": "text",
-        "content": "Advertencia. No conviene para niños menores de 36 meses. Cuerda larga. Peligro de estrangulamiento."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-含长绳（荷兰语）",
-        "type": "text",
-        "content": "Waarschuwing. Niet geschikt voor kinderen jonger dan 36 maanden.Lang koord. Verwurgingsgevaar."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-含长绳（葡萄牙语）",
-        "type": "text",
-        "content": "Atenção. Contra-indicado para crianças com menos de 36 meses. Corda comprida.Risco de estrangulamento."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-含长绳（瑞典语）",
-        "type": "text",
-        "content": "Varning. Inte lämplig för barn under 36 månader.Långt snöre. Risk för strypning."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-含长绳-捷克语",
-        "type": "text",
-        "content": "Upozornění. Nevhodné pro děti mladší 36 měsíců. Dlouhá šňůra. Nebezpečí uškrcení."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-含长绳-波兰语",
-        "type": "text",
-        "content": "Ostrzeżenie. Nieodpowiednie dla dzieci w wieku poniżej 36 miesięcy.Długa linka. Niebezpieczeństwo uduszenia."
-      },
-      {
-        "name": "土耳其玩具-不适合0-3岁警示语-含长绳",
-        "type": "text",
-        "content": "Uyarı. 36 aydan küçük çocuklar için uygun değildir.Uzun ip / kordon. Boğulma Tehlikesi (Düğümlenme)."
-      },
-      {
-        "name": "儿童玩具不适合0-3岁警示语-含长绳（匈牙利语）",
-        "type": "text",
-        "content": "Figyelmeztetés. Csak 36 hónaposnál idősebb gyermekek számára alkalmas.Hosszú zsinór. Fojtásveszély."
-      },
-      {
-        "name": "英国儿童玩具警示语-活动玩具",
-        "type": "text",
-        "content": "Warning. Only for domestic use."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-活动玩具（荷兰语）",
-        "type": "text",
-        "content": "Waarschuwing. Uitsluitend voor huishoudelijk gebruik."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-活动玩具（葡萄牙语）",
-        "type": "text",
-        "content": "Atenção. Apenas para uso doméstico."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-活动玩具（瑞典语）",
-        "type": "text",
-        "content": "Varning. Endast för hemmabruk."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-活动玩具-捷克语",
-        "type": "text",
-        "content": "Upozornění. Jen pro domácí použití."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-活动玩具-波兰语",
-        "type": "text",
-        "content": "Ostrzeżenie. Wyłącznie do użytku domowego."
-      },
-      {
-        "name": "土耳其玩具-活动玩具警示语",
-        "type": "text",
-        "content": "Uyarı. Sadece evde kullanım içindir."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-活动玩具（匈牙利语）",
-        "type": "text",
-        "content": "Figyelmeztetés. Csak otthoni használatra."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-活动玩具（德语）",
-        "type": "text",
-        "content": "Achtung. Nur für den Hausgebrauch."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-活动玩具（法语）",
-        "type": "text",
-        "content": "Attention. Réservé à un usage familial."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-活动玩具（意大利语）",
-        "type": "text",
-        "content": "Avvertenza. Solo per uso domestico."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-活动玩具（西班牙语）",
-        "type": "text",
-        "content": "Advertencia. Solo para uso doméstico."
-      },
-      {
-        "name": "英国儿童玩具警示语-水上玩具",
-        "type": "text",
-        "content": "Warning. Only to be used in water in which the child is within its depth and under adult supervision."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-水上玩具（德语）",
-        "type": "text",
-        "content": "Achtung. Nur im flachen Wasser unter Aufsicht von Erwachsenen verwenden."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-水上玩具（法语）",
-        "type": "text",
-        "content": "Attention. À n'utiliser qu'en eau où l'enfant a pied et sous la surveillance d'un adulte."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-水上玩具（意大利语）",
-        "type": "text",
-        "content": "Avvertenza. Da utilizzare unicamente in acqua dove il bambino tocca il fondo con i piedi e sotto la sorveglianza di un adulto."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-水上玩具（西班牙语）",
-        "type": "text",
-        "content": "Advertencia. Utilizar solo en agua donde el niño pueda permanecer de pie y bajo vigilancia de un adulto."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-水上玩具（荷兰语）",
-        "type": "text",
-        "content": "Waarschuwing. Gebruiken in water waar kinderen kunnen staan en onder toezicht van volwassenen."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-水上玩具（葡萄牙语）",
-        "type": "text",
-        "content": "Atenção. Só utilizar em água onde a criança tenha pé e sob vigilância de adultos."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-水上玩具（瑞典语）",
-        "type": "text",
-        "content": "Varning. Får endast användas i vatten där barnet bottnar och under tillsyn av en vuxen."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-水上玩具-捷克语",
-        "type": "text",
-        "content": "Upozornění. Používat pouze ve vodě takové hloubky, kde dítě stačí, a pouze pod dohledem dospělé osoby."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-水上玩具-波兰语",
-        "type": "text",
-        "content": "Ostrzeżenie. Do używania jedynie w wodzie na głębokości, na której dziecko wyczuwa dno pod stopami oraz pod nadzorem osoby dorosłej."
-      },
-      {
-        "name": "土耳其玩具-水上玩具警示语",
-        "type": "text",
-        "content": "Uyarı. Sadece çocuğun boyunu geçmeyen sularda ve yetişkin gözetiminde kullanılmalıdır."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-水上玩具（匈牙利语）",
-        "type": "text",
-        "content": "Figyelmeztetés. Csak a gyermek magasságát meg nem haladó sekély vízben és felnőtt felügyelete mellett szabad használni!"
-      },
-      {
-        "name": "英国儿童玩具警示语-需要成人监督",
-        "type": "text",
-        "content": "Warning. To be used under the direct supervision of an adult."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-需要成人监督（德语）",
-        "type": "text",
-        "content": "Achtung. Benutzung unter unmittelbarer Aufsicht von Erwachsenen."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-需要成人监督（法语）",
-        "type": "text",
-        "content": "Attention. À utiliser sous la surveillance rapprochée d'un adulte."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-需要成人监督（意大利语）",
-        "type": "text",
-        "content": "Avvertenza. Da usare sotto la diretta sorveglianza di un adulto."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-需要成人监督（西班牙语）",
-        "type": "text",
-        "content": "Advertencia. Utilícese bajo la vigilancia directa de un adulto."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-需要成人监督（荷兰语）",
-        "type": "text",
-        "content": "Waarschuwing. Gebruiken onder direct toezicht van een volwassene."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-需要成人监督（葡萄牙语）",
-        "type": "text",
-        "content": "Atenção. A utilizar sob a vigilância directa de adultos."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-需要成人监督（瑞典语）",
-        "type": "text",
-        "content": "Varning. Ska användas under tillsyn av vuxen."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-需要成人监督-捷克语",
-        "type": "text",
-        "content": "Upozornění. Používat pod přímým dohledem dospělé osoby."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-需要成人监督-波兰语",
-        "type": "text",
-        "content": "Ostrzeżenie. Do użytku pod bezpośrednim nadzorem osoby dorosłej."
-      },
-      {
-        "name": "土耳其玩具-需要成人监督",
-        "type": "text",
-        "content": "Uyarı. Bir yetişkinin doğrudan gözetimi altında kullanılmalıdır."
-      },
-      {
-        "name": "欧盟儿童玩具警示语-需要成人监督（匈牙利语）",
-        "type": "text",
-        "content": "Figyelmeztetés. Csak felnőtt közvetlen felügyelete mellett használható."
-      }
+      { "name": "法国 Triman 标识", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/2/france_1.png" },
+      { "name": "法国 Triman 标识（包装）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-triman-bg.png" },
+      { "name": "法国 Triman 标识（包装）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-triman-fr.png" },
+      { "name": "法国 Triman 标识（包装）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/2/france_6.png" },
+      { "name": "法国 Triman 标识（包装）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/2/france_7.png" },
+      { "name": "法国 Triman 标识（纺织品）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/221-bf.png" },
+      { "name": "法国 Triman 标识（纺织品）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-triman-fzp.png" },
+      { "name": "法国 Triman 标识（电器）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-triman-epr.png" },
+      { "name": "法国 Triman 标识（玩具）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-triman-wj.png" },
+      { "name": "法国 Triman 标识（电器）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/221-2f.png" },
+      { "name": "法国 Triman 标识（电器）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-triman-dq.png" },
+      { "name": "法国 Triman 标识（电器）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/2/france_2.png" },
+      { "name": "法国 Triman 标识（电器）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/2/france_3.png" },
+      { "name": "法国 Triman 标识（包装）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/2/france_8.png" },
+      { "name": "法国 Triman 标识（纺织品）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/2/france_4.png" },
+      { "name": "法国 Triman 标识（纺织品）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/2/france_5.png" }
+    ]
+  },
+  {
+    "groupTitle": "西班牙包装标",
+    "items": [
+      { "name": "黄（塑料、金属或硬纸盒）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/12/spain_recicla_yellow.png" },
+      { "name": "蓝（纸、纸板或瓦愣纸）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/12/spain_recycling_blue.png" },
+      { "name": "棕（可降解包装）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/12/spain_composta_brown.png" },
+      { "name": "绿（玻璃）", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/12/spain_recicla_green.png" }
+    ]
+  },
+  {
+    "groupTitle": "化妆品",
+    "items": [
+      { "name": "通用可回收标志", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-environmentala.png" },
+      { "name": "建议开封 6 个月内使用完毕", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-6M.png" },
+      { "name": "建议开封 12 个月内使用完毕", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-12M.png" },
+      { "name": "建议开封 24 个月内使用完毕", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/3/24M.png" },
+      { "name": "需阅读说明书", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-book.png" },
+      { "name": "欧盟无动物测试标志", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/3/eu_no_animal_test_mark.png" }
+    ]
+  },
+  {
+    "groupTitle": "纽扣电池",
+    "items": [
+      { "name": "含有电池产品的警告标志", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/10/battery_4.png" },
+      { "name": "放在儿童接触不到的地方", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/10/battery_5.png" },
+      { "name": "纽扣/硬币电池吞食危险警示-组合", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/10/battery_3.png" }
+    ]
+  },
+  {
+    "groupTitle": "欧盟能效",
+    "items": [
+      { "name": "欧盟", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/6/eu_energy_1.png" },
+      { "name": "欧盟能源标志", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/6/eu_energy_2.png" },
+      { "name": "能效 A", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/6/eu_energy_9.png" },
+      { "name": "能效等级", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/6/eu_energy_12.png" }
+    ]
+  },
+  {
+    "groupTitle": "医疗器械标",
+    "items": [
+      { "name": "生产日期", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/8/medical_3.png" },
+      { "name": "朝上摆放", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/8/medical_6.png" },
+      { "name": "温度限制", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/8/medical_10.png" },
+      { "name": "批次编号", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/8/medical_27.png" }
+    ]
+  },
+  {
+    "groupTitle": "水洗标",
+    "items": [
+      { "name": "手洗", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-sx5.png" },
+      { "name": "可熨烫", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-yd66.png" },
+      { "name": "不可熨烫", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-ydx67.png" },
+      { "name": "平放晾干", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/227-yty60.png" }
+    ]
+  },
+  {
+    "groupTitle": "GHS全球危险品统一标识",
+    "items": [
+      { "name": "易燃品标志", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/7/ghs_danger_5.png" },
+      { "name": "剧毒物标志", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/7/ghs_danger_4.png" },
+      { "name": "腐蚀品标志", "type": "image", "img": "https://recruit-student.51miniapps.com/tool/icon/7/ghs_danger_13.png" }
     ]
   }
 ];
